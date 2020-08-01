@@ -43,11 +43,6 @@ class App extends Component {
     this.search(this.state.city)
   }
 
-  shouldComponentUpdate(nextState){
-    const results = this.state.results !== nextState.results;
-    return results;
-  }
-
   render() {
   return (
    <div className="App">
